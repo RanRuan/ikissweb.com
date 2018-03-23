@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "helseriftot-boo-webfont";
+  src: url("helseriftot-boo-webfont.woff2") format("woff2"),
+       url("helseriftot-boo-webfont.woff") format("woff"),
+       url("helseriftot-boo-webfont.ttf") format("truetype"),
+       url("helseriftot-boo-webfont.eot") format("embedded-opentype"),
+       url("helseriftot-boo-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

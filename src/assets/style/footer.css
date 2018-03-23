@@ -1,0 +1,32 @@
+.footer{
+	background-color: #373a36;
+}
+.footerContent{
+	padding: 20px;
+	margin-top: 30px;
+}
+.footerTitle{
+	color: #fff;
+	font: 24px/30px Arial,sans-serif;
+}
+.myInfo{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font: 16px/26px Arial,sans-serif;
+}
+.myInfo span{
+	display: inline-block;
+	margin-left: 10px;
+}
+.webInfo{
+	color: #fff;
+	font: 14px/20px Arial,sans-serif;
+}
+.backTime {
+	margin-top: 20px;
+	width: 100%;
+	color: #fff;
+	font: 50px/50px sans-serif;
+}

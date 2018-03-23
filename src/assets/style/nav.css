@@ -1,0 +1,34 @@
+.kissNavs{
+	height: 40px;
+}
+.kissNavWrap{
+	height: 40px;
+	width: 100%;
+	position:fixed;
+	top:90px;
+	z-index: 1234;
+	background-color: #001529;
+}
+
+@media all and (max-width:576px) {
+.kissNavs{
+	display: none;
+}
+}
+.ant-input {
+	border-radius: 18px;
+	height: 24px;
+	line-height: 30px;
+	color: #fff;
+	background: transparent;
+}
+.ant-input-search-icon {
+  pointer-events: none;
+  color: #fff;
+}
+
+.ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled) {
+  border-color: #fff;
+  width: 180px;
+  transform: translateX(-20px);
+}

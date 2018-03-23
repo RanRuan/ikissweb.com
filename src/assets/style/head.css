@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "kissfont";
+  src: url("../fonts/helseriftot-boo-webfont.woff2") format("woff2"),
+       url("../fonts/helseriftot-boo-webfont.woff") format("woff"),
+       url("../fonts/helseriftot-boo-webfont.ttf") format("truetype"),
+       url("../fonts/helseriftot-boo-webfont.eot") format("embedded-opentype"),
+       url("../fonts/helseriftot-boo-webfont.svg") format("svg");
+}
+
+.header {
+	height: 90px;
+}
+.fixedHeader{
+	background-color: #ea4498;
+	width: 100%;
+	height: 90px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 133485953;
+}
+#logo {
+	font: 3rem/90px kissfont;
+	color: #fff;
+	margin-left: 10%;
+}
+@media all and (max-width:576px) {
+	#logo {
+	font: 2rem/60px kissfont;
+}
+.header {
+	height: 60px;
+	width: 100%;
+		
+}
+.fixedHeader{
+	height: 60px;
+}
+.resBtn {
+	position: relative;
+	height: 60px;
+	width: 100%;
+}
+.resBtn * {
+	position: absolute;
+	top: 15px;
+	margin-left: 10%;
+}
+#resMenu {
+	position: absolute;
+	top: 60px;
+	right: -600px;
+	height:auto;
+	width: 375px;
+	box-sizing: border-box;
+	transition: .5s all linear;
+	background-color: #373a36;
+	z-index: 3;
+	}
+.resMenuList li{
+	color: #fff;
+	font: 16px/36px Arial;
+	margin: 0 20%;
+	border-bottom: 1px solid #fff;
+
+}
+
+}
+
+#kissSkills{
+	list-style: none;
+	margin: 26px 0 0 0 ;
+	padding: 0;
+	height: 44px;
+	width:100%;
+}
+
+#kissSkills li{
+	position: relative;
+	width: 40px;
+	margin-right: 5px;
+	height: 40px;
+	border-radius: 20px;
+	float: left;
+	background: #c41b70 no-repeat center;
+	background-size: 26px auto;
+	transition: all .2s linear;
+}
+
+#kissSkills li:nth-of-type(1){
+	background-image: url('../imgs/react.png')
+}
+#kissSkills li:nth-of-type(2){
+	background-image: url('../imgs/ant design.png')
+}
+#kissSkills li:nth-of-type(3){
+	background-image: url('../imgs/css.png')
+}
+#kissSkills li:nth-of-type(4){
+	background-image: url('../imgs/js.png')
+}
+#kissSkills li:nth-of-type(5){
+	background-image: url('../imgs/nodejs.png')
+}
+#kissSkills li:nth-of-type(6){
+	background-image: url('../imgs/A.png')
+}
+#kissSkills li:nth-of-type(7){
+	background-image: url('../imgs/mongodb.png')
+}
+#kissSkills li:nth-of-type(8){
+	background-image: url('../imgs/GitHub.png')
+}
+#kissSkills li:hover{
+	border: 5px solid #971556;
+	animation:shake 0.2s;  
+	-webkit-animation:shake 0.2s;  
+}
+
+@keyframes shake {  0%   { left:0px;} 
+					 25%  { left:3px;} 
+					 50%  { right:3px;} 
+					 75%  { left:3px;} 
+					 100% { right:0px;} 
+				} 

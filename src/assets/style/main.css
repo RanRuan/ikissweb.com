@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "kissfont";
+  src: url("../fonts/helseriftot-boo-webfont.woff2") format("woff2"),
+       url("../fonts/helseriftot-boo-webfont.woff") format("woff"),
+       url("../fonts/helseriftot-boo-webfont.ttf") format("truetype"),
+       url("../fonts/helseriftot-boo-webfont.eot") format("embedded-opentype"),
+       url("../fonts/helseriftot-boo-webfont.svg") format("svg");
+}
+
+.subTitle{
+	position: relative;
+	height: 40px;
+	width: 160px;
+	color: #fff;
+	text-indent: 1em;
+	font: 18px/40px kissfont;
+	background-color: #b1b1b1;
+}
+.iconTriangle{
+	display: block;
+	position: absolute;
+	right: -10px;
+	top: 12px;
+	height: 15px;
+	width: 15px;
+	background-color: #e9e7e9;
+	transform: rotate(45deg);
+}
+.banner {
+	padding: 20px 8%  0px 8% ;
+}
+.banner img{
+	height:auto;
+	width: 100%;
+	border-left: 1px solid  #000;
+	border-right: 1px solid #000;
+}
+.null {
+	height: 25px;
+}
+.home-right-content{
+	padding: 20px 10% 20px 10%;
+}
+.homeTitle{
+	background-color: #fff;
+	font: 32px/42px 'kissfont',Arial,sans-serif;
+
+}
+.homeTitle span{
+	display: block;
+	font-weight: bolder;
+	font-color: #373a36;
+}
+.homeTitle::selection
+{
+	background: transparent;
+	color: #373a36;
+}
+.homeContent {
+	margin-top: 20px;
+	font-size: 18px ;
+	font-weight: bold ;
+}
+.viewMore div{
+	margin-top: 20px;
+	position: relative;
+	height: 42px;
+	width: 170px;
+	line-height: 42px;
+	background-color: #13b5ea; 
+	transition: .5s all;
+}
+.viewMore div span {
+	display: block;
+	position: absolute;
+	right: 0;
+	height: 42px;
+	width: 50px;
+	background-color: rgba(255, 255, 255, .3); 
+}
+.viewMore div span >*{
+	position: absolute;
+	left: 10px;
+	top: 8px;
+	color: #fff;
+	font-size: 30px;
+}
+.viewMore:hover div{
+	width:180px;
+}
+.ink1R{
+	position: absolute;
+	top: 200px;
+	height: 360px;
+	width: 100%;
+	background: url('../imgs/ink_r1.png') no-repeat;
+}
+.ink1R img{
+	display: none;
+	position: absolute;
+	top: 160px;
+	left: 20%;
+	animation: arrowMove 2s linear infinite;
+	-webkit-animation:arrowMove 2s linear infinite;  
+
+}
+@keyframes arrowMove{
+	0% {top:280px;left:15%;}
+	50% {top:260px;left: 20%;}
+	100% {top:280px;left:15%;}
+}
+.scroll {
+	text-align: center;
+	font:bold 22px/22px Arial,sans-serif;
+	color: #ccc;
+}
+.arrow{
+	text-align: center;
+	margin: -20px 0 20px 0;
+	font:bold 60px/60px Arial,sans-serif;
+	color: #ccc;
+	position: relative;
+	animation: scrollMove 2s linear infinite;
+	-webkit-animation:scrollMove 2s linear infinite;  
+}
+@keyframes scrollMove{
+	0% {top:0;}
+	50% {top:20px;}
+	100% {top:0px;}
+}
+
+@media all and (max-width:768px ){
+	.ink1R{
+		display: none;
+	}
+}
